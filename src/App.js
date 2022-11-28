@@ -25,7 +25,7 @@ function App() {
     } else {
       setUserName('');
     }
-  }, [loggedIn])
+  }, [])
   // second argument: dependency array
   // in this example: ONLY run the CBF if the value of loggedIn is updated 
 
