@@ -5,7 +5,7 @@ import VipRoom from './VipRoom.js';
 function App() {
 
   const [loggedIn, setLoggedIn] = useState(false);
-  const [userName, setUserName] = useState('');
+  const [setUserName] = useState('');
   const [message, setMessage] = useState('');
 
   // useEffect(() => {
