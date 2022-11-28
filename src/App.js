@@ -5,7 +5,7 @@ import VipRoom from './VipRoom.js';
 function App() {
 
   const [loggedIn, setLoggedIn] = useState(false);
-  // const [setUserName] = useState('');
+  const [userName, setUserName] = useState('');
   const [message, setMessage] = useState('');
 
   // useEffect(() => {
@@ -14,13 +14,16 @@ function App() {
   // in this example, the code in our useEffect is called on every render (no dependency array)
   // any time state changes and triggers a re-render, the useEffect logic runs
 
+
+
   useEffect(() => {
     // first argument, cbf, is the logic that will run when useEffect is called
     // console.log("loggedIn state was updated");
     if (loggedIn === true) {
-      setUserName('captain 🪝')
+      setUserName('captain 🪝');
+      console.log(userName);
     } else {
-      setUserName('')
+      setUserName('');
     }
   }, [loggedIn])
   // second argument: dependency array
